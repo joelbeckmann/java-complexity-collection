@@ -20,8 +20,7 @@ public class TreeExpand {
   public static TreeExpand build(int length) {
     TreeExpand t = new TreeExpand();
     if (length > 3) {
-      length--;
-      t.left = build(length);
+      t.left = build(length - 1);
     } else {
       t.left = expand(length);
     }
@@ -31,9 +30,8 @@ public class TreeExpand {
   public static TreeExpand expand(int length) {
     TreeExpand t = new TreeExpand();
     if (length > 0) {
-      length--;
-      t.left = expand(length);    
-      t.right = expand(length);
+      t.left = expand(length - 1);    
+      t.right = expand(length - 1);
     }
     return t;
   }

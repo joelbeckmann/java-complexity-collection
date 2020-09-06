@@ -10,6 +10,7 @@ public class BuildAppend {
   public static void main(String[] args) {
     int n = args.length;
     BuildAppend list = append(n);
+    
     while (list.next != null) {
       list = list.next;
     }
@@ -21,27 +22,25 @@ public class BuildAppend {
 
   public static BuildAppend append(int length) {
     BuildAppend al = build(length);
+    int i = 0;
     return buildAppend(al, length);
   }
   
   public static BuildAppend build(int length) {
     BuildAppend l = new BuildAppend();
     if (length > 0) {
-      length--;
-      l.next = build(length);
+      l.next = build(length - 1);
     }
     return l;
   }
   
   public static BuildAppend buildAppend(BuildAppend al, int length) {
-    BuildAppend l = new BuildAppend();
     if (length > 0) {
-      length--;
-      l.next = buildAppend(al, length);
-    } else {
-      return al;
+      BuildAppend l = new BuildAppend();
+      l.next = buildAppend(al, length - 1);
+      return l;
     }
-    return l;
+    return al;
   }
 }
 

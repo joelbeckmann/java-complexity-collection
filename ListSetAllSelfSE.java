@@ -31,11 +31,10 @@ public class ListSetAllSelfSE {
   }
 
   public static void setAll(ListSetAllSelfSE list, ListSetAllSelfSE o) {
-    if (list == null) {
-        return;
+    if (list != null) {
+      list.value = o;
+      setAll(list.next, o);
     }
-    list.value = o;
-    setAll(list.next, o);
   }  
 }
 

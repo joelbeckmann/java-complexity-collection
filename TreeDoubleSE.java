@@ -26,22 +26,21 @@ public class TreeDoubleSE {
 
   public static void build(TreeDoubleSE t, int height) {
     if (height > 0) {
-      height--;
       TreeDoubleSE l = new TreeDoubleSE();
       t.left = l;
-      build(l, height);
+      build(l, height -1);
       TreeDoubleSE r = new TreeDoubleSE();
       t.right = r;
     }
   }
   
   private static void inOrder(TreeDoubleSE node) {
-        if (node == null) {
-            return;
-        }
-
-        inOrder(node.left);
-        inOrder(node.right);
+    if (node == null) {
+        return;
     }
+
+    inOrder(node.left);
+    inOrder(node.right);
+  }
 }
 

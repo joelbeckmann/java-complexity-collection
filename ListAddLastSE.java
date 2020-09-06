@@ -11,6 +11,7 @@ public class ListAddLastSE {
     ListAddLastSE list = new ListAddLastSE();
     while(n > 0) {
       addLast(list);
+      n--;
     }
   }
 

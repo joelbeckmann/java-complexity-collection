@@ -26,8 +26,7 @@ public class TreeDouble {
   public static TreeDouble build(int height) {
     TreeDouble t = new TreeDouble();
     if (height > 0) {
-      height--;
-      t.left = build(height);
+      t.left = build(height - 1);
       TreeDouble d = new TreeDouble();
       t.right = d;
     }
@@ -35,13 +34,13 @@ public class TreeDouble {
   }
   
   private static void inOrder(TreeDouble node) {
-        if (node == null) {
-            return;
-        }
-
-        inOrder(node.left);
-        inOrder(node.right);
+    if (node == null) {
+        return;
     }
+
+    inOrder(node.left);
+    inOrder(node.right);
+  }
     
 }
 

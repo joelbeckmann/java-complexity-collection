@@ -10,6 +10,7 @@ public class DeleteLast {
     int n = args.length;
     DeleteLast list = build(n);
     deleteLast(list);
+    
     while(list.next != null) {
       list = list.next;
     }

@@ -25,22 +25,20 @@ public class TwinTreeSE {
 
   public static void build(TwinTreeSE t, int height) {
     if (height > 0) {
-      height--;
       TwinTreeSE l = new TwinTreeSE();
       TwinTreeSE r = new TwinTreeSE();
       t.left = l;
       t.right = r;
-      build(l, height);
-      buildRight(r, height);
+      build(l, height - 1);
+      buildRight(r, height - 1);
     }
   }
 
   public static void buildRight(TwinTreeSE t, int height) {
     if (height > 0) {
-      height--;
       TwinTreeSE r = new TwinTreeSE();
       t.right = r;
-      buildRight(r, height);
+      buildRight(r, height - 1);
     }
   }
   

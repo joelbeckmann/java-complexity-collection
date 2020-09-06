@@ -25,9 +25,8 @@ public class TwinTree {
   public static TwinTree build(int height) {
     TwinTree t = new TwinTree();
     if (height > 0) {
-      height--;
-      t.left = build(height);
-      t.right = buildRight(height);
+      t.left = build(height - 1);
+      t.right = buildRight(height - 1);
     }
     return t;
   }
@@ -35,12 +34,11 @@ public class TwinTree {
   public static TwinTree buildRight(int height) {
     TwinTree t = new TwinTree();
     if (height > 0) {
-      height--;
-      t.right = buildRight(height);
+      t.right = buildRight(height - 1);
     }
     return t;
   }
-  
+
   private static void inOrder(TwinTree node) {
     if (node == null) {
       return;

@@ -22,8 +22,7 @@ public class TreeExpandSE {
     TreeExpandSE l = new TreeExpandSE();
     t.left = l;
     if (length > 3) {
-      length--;
-      build(l, length);
+      build(l, length - 1);
     } else {
       expand(l, length);
     }
@@ -31,13 +30,12 @@ public class TreeExpandSE {
 
   public static void expand(TreeExpandSE t, int length) {
     if (length > 0) {
-      length--;
       TreeExpandSE l = new TreeExpandSE();
       TreeExpandSE r = new TreeExpandSE();
       t.left = l;
       t.right = r;
-      expand(l, length);    
-      expand(r, length);
+      expand(l, length - 1);    
+      expand(r, length - 1);
     }
   }
 }

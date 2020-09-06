@@ -9,7 +9,7 @@ public class ListSetAllSE {
 
   public static void main(String[] args) {
     int i = args.length;
-    ListSetAllSE list = ListSetAllSE.createList(i);
+    ListSetAllSE list = createList(i);
     setAll(list, new Object());
     while (list.next != null) {
       list = list.next;
@@ -31,11 +31,10 @@ public class ListSetAllSE {
   }
 
   public static void setAll(ListSetAllSE list, Object o) {
-    if (list == null) {
-        return;
+    if (list != null) {
+      list.value = o;
+      setAll(list.next, o);
     }
-    list.value = o;
-    setAll(list.next, o);
   }  
 }
 

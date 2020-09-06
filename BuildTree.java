@@ -9,6 +9,7 @@ public class BuildTree {
   public static void main(String[] args) {
     int n = args.length;
     BuildTree tree = build(n);
+    inOrder(tree, 0);
   }
 
   public BuildTree() {
@@ -19,13 +20,21 @@ public class BuildTree {
   public static BuildTree build(int height) {
     BuildTree t = new BuildTree();
     if (height > 0) {
-      height = height - 1;
-      BuildTree l = build(height);
-      BuildTree r = build(height);
+      BuildTree l = build(height - 1);
+      BuildTree r = build(height - 1);
       t.left = l;
       t.right = r;
     }
     return t;
+  }
+  
+  public static void inOrder(BuildTree t, int h) {
+    if (t != null) {
+      System.out.println("left " + h);
+      inOrder(t.left, h+1);
+      System.out.println("right " + h);
+      inOrder(t.right, h+1);
+    }
   }
 }
 

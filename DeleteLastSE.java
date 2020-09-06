@@ -11,6 +11,7 @@ public class DeleteLastSE {
     DeleteLastSE list = new DeleteLastSE();
     build(list, n);
     deleteLastSE(list);
+    
     while(list.next != null) {
       list = list.next;
     }
@@ -29,10 +30,9 @@ public class DeleteLastSE {
   
   public static void build(DeleteLastSE l, int length) {
     if (length > 0) {
-      length--;
       DeleteLastSE n = new DeleteLastSE();
       l.next = n;
-      build(n, length);
+      build(n, length - 1);
     }
   }
 }

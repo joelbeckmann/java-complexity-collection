@@ -19,11 +19,10 @@ public class BuildTreeSE {
 
   public static void build(BuildTreeSE t, int height) {
     if (height > 0) {
-      height = height - 1;
       BuildTreeSE l = new BuildTreeSE();
-      build(l, height);
+      build(l, height - 1);
       BuildTreeSE r = new BuildTreeSE();
-      build(r, height);
+      build(r, height - 1);
       t.left = l;
       t.right = r;
     }
