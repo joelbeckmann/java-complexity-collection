@@ -11,6 +11,9 @@ public class ListSetAllSelfSE {
     int i = args.length;
     ListSetAllSelfSE list = createList(i);
     setAll(list, list);
+    while (list.next != null) {
+      list = list.next;
+    }
   }
 
   public ListSetAllSelfSE(ListSetAllSelfSE next, ListSetAllSelfSE value) {

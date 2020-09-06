@@ -11,7 +11,7 @@ public class ListSetAllListSE {
     int i = args.length;
     ListSetAllListSE list = createList(i);
     ListSetAllListSE o = createList(i);
-    setAll(list, list);
+    setAll(list, o);
     while (list.next != null) {
       list = list.next;
     }

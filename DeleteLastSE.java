@@ -10,7 +10,7 @@ public class DeleteLastSE {
     int n = args.length;
     DeleteLastSE list = new DeleteLastSE();
     build(list, n);
-    DeleteLastSE(list);
+    deleteLastSE(list);
     while(list.next != null) {
       list = list.next;
     }
@@ -20,9 +20,9 @@ public class DeleteLastSE {
     this.next = null;
   }
 
-  public static void DeleteLastSE(DeleteLastSE l) {
+  public static void deleteLastSE(DeleteLastSE l) {
     if (l.next != null) {
-      DeleteLastSE(l.next);
+      deleteLastSE(l.next);
     }
     l.next = null;
   }
