@@ -1,10 +1,10 @@
-public class ListDouble {
+public class ListDoubleRET {
   public int value;
-  public ListDouble next;
+  public ListDoubleRET next;
 
   public static void main(String[] args) {
     int i = args.length;
-    ListDouble list = ListDouble.build(i);
+    ListDoubleRET list = ListDoubleRET.build(i);
     list = doubleValues(list);
 
     int sum = 0;
@@ -14,14 +14,14 @@ public class ListDouble {
     }
   }
 
-  public ListDouble() {
+  public ListDoubleRET() {
     this.next = null;
     this.value = 1;
   }
 
-  public static ListDouble build(int length) {
+  public static ListDoubleRET build(int length) {
     if (length > 0) {
-      ListDouble l = new ListDouble();
+      ListDoubleRET l = new ListDoubleRET();
       l.value = length;
       l.next = build(length - 1);
       return l;
@@ -29,7 +29,7 @@ public class ListDouble {
     return null;
   }
 
-  public static ListDouble doubleValues(ListDouble l) {
+  public static ListDoubleRET doubleValues(ListDoubleRET l) {
     if (l.next != null) {
       l.next = doubleValues(l.next);
     }

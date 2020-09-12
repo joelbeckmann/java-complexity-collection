@@ -1,6 +1,6 @@
-public class ListSetAllSelf {
-  public ListSetAllSelf value;
-  public ListSetAllSelf next;
+public class ListSetAllSelfRET {
+  public ListSetAllSelfRET value;
+  public ListSetAllSelfRET next;
   
   /**
    * Create a list 'list' of length n
@@ -9,28 +9,28 @@ public class ListSetAllSelf {
 
   public static void main(String[] args) {
     int i = args.length;
-    ListSetAllSelf list = createList(i);
+    ListSetAllSelfRET list = createList(i);
     list = setAll(list, list);
     while (list.next != null) {
       list = list.next;
     }
   }
 
-  public ListSetAllSelf(ListSetAllSelf next, ListSetAllSelf value) {
+  public ListSetAllSelfRET(ListSetAllSelfRET next, ListSetAllSelfRET value) {
     this.next = next;
     this.value = value;
   }
 
-  public static ListSetAllSelf createList(int length) {
-    ListSetAllSelf result = null;
+  public static ListSetAllSelfRET createList(int length) {
+    ListSetAllSelfRET result = null;
     while (length > 0) {
-      result = new ListSetAllSelf(result, null);
+      result = new ListSetAllSelfRET(result, null);
       length--;
     }
     return result;
   }
 
-  public static ListSetAllSelf setAll(ListSetAllSelf list, ListSetAllSelf o) {
+  public static ListSetAllSelfRET setAll(ListSetAllSelfRET list, ListSetAllSelfRET o) {
     if (list != null) {
       list.value = o;
       list.next = setAll(list.next, o);

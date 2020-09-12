@@ -10,6 +10,7 @@ public class BuildTreeSE {
     int n = args.length;
     BuildTreeSE tree = new BuildTreeSE();
     build(tree, n);
+    inOrder(tree);
   }
 
   public BuildTreeSE() {
@@ -25,6 +26,13 @@ public class BuildTreeSE {
       build(r, height - 1);
       t.left = l;
       t.right = r;
+    }
+  }
+  
+  public static void inOrder(BuildTreeSE t) {
+    if (t != null) {
+      inOrder(t.left);
+      inOrder(t.right);
     }
   }
 }

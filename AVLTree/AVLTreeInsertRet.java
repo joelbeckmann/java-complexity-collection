@@ -1,5 +1,7 @@
+package AVLTree;
+
 // Java program for insertion in AVL Tree 
-public class AVLTreeInsert { 
+public class AVLTreeInsertRet { 
 
 	Node root; 
 
@@ -108,7 +110,7 @@ public class AVLTreeInsert {
 	} 
 
 	public static void main(String[] args) { 
-		AVLTreeInsert tree = new AVLTreeInsert(); 
+		AVLTreeInsertRet tree = new AVLTreeInsertRet(); 
 		int n = args.length;
 		while (n > 0) {
 		  tree.root = tree.insert(tree.root, n);

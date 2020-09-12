@@ -1,5 +1,5 @@
-public class ListAddLast {
-  public ListAddLast next;
+public class ListAddLastRET {
+  public ListAddLastRET next;
   
   /**
    * Create a list with length n by going through the whole 
@@ -8,22 +8,22 @@ public class ListAddLast {
 
   public static void main(String[] args) {
     int n = args.length;
-    ListAddLast list = new ListAddLast();
+    ListAddLastRET list = new ListAddLastRET();
     while(n > 0) {
       list = addLast(list);
       n--;
     }
   }
 
-  public ListAddLast() {
+  public ListAddLastRET() {
     this.next = null;
   }
 
-  public static ListAddLast addLast(ListAddLast l) {
+  public static ListAddLastRET addLast(ListAddLastRET l) {
     if (l.next != null) {
       l.next = addLast(l.next);
     } else {
-      ListAddLast n = new ListAddLast();
+      ListAddLastRET n = new ListAddLastRET();
       l.next = n;
     }
     return l;

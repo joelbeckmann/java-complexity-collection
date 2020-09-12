@@ -1,3 +1,5 @@
+package AVLTree;
+
 public class Node { 
 	int key, height; 
 	Node left, right; 

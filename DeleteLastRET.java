@@ -1,5 +1,5 @@
-public class DeleteLast {
-  public DeleteLast next;
+public class DeleteLastRET {
+  public DeleteLastRET next;
   
   /**
    * Build a list with length n
@@ -8,27 +8,27 @@ public class DeleteLast {
 
   public static void main(String[] args) {
     int n = args.length;
-    DeleteLast list = build(n);
-    deleteLast(list);
+    DeleteLastRET list = build(n);
+    list = DeleteLastRET(list);
     
     while(list.next != null) {
       list = list.next;
     }
   }
 
-  public DeleteLast() {
+  public DeleteLastRET() {
     this.next = null;
   }
 
-  public static DeleteLast deleteLast(DeleteLast l) {
+  public static DeleteLastRET DeleteLastRET(DeleteLastRET l) {
     if (l.next != null) {
-      l.next = deleteLast(l.next);
+      l.next = DeleteLastRET(l.next);
     }
     return null;
   }
   
-  public static DeleteLast build(int length) {
-    DeleteLast l = new DeleteLast();
+  public static DeleteLastRET build(int length) {
+    DeleteLastRET l = new DeleteLastRET();
     if (length > 0) {
       l.next = build(length - 1);
     }
