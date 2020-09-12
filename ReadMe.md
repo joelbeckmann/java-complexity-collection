@@ -20,9 +20,9 @@ A collection of Java programs for Complexity Analysis.
 | BuildTree        | O(2^n)          | O(2^n)          |
 | CopyIntList      | O(n)            | O(n)            |
 | DeleteLast       | O(n)            | O(n)            |
-| DoubleIntList    | O(n^2)          | O(n)            |
+| DoubleIntListSE  | O(n^2)          | O(n)            |
 | ListAddDepth     | O(n^2)          | O(n)            |
-| ListAddLast      | O(n)            | O(n)            |
+| ListAddLast      | O(n^2)          | O(n)            |
 | ListBuildCount   | O(n^2)          | O(n)            |
 | ListBuildCount2  | O(n^2)          | O(n)            |
 | ListDouble       | O(n)            | O(n)            |

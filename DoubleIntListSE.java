@@ -1,25 +1,25 @@
-public class DoubleIntList {
-  public DoubleIntList next;
+public class DoubleIntListSE {
+  public DoubleIntListSE next;
   public int value;
   
-  public DoubleIntList(int i) {
+  public DoubleIntListSE(int i) {
     this.next = null;
     this.value = i;
   }
 
-  public static DoubleIntList build(int n) {
+  public static DoubleIntListSE build(int n) {
     if(n <= 0) {
       return null;
     } else {
-      DoubleIntList l = new DoubleIntList(0);
+      DoubleIntListSE l = new DoubleIntListSE(0);
       l.next = build(n-1);
       return l;
     }
   }
 
   public void doubleItems() {
-    DoubleIntList oldNext = this.next;
-    DoubleIntList duplicate = new DoubleIntList(this.value);
+    DoubleIntListSE oldNext = this.next;
+    DoubleIntListSE duplicate = new DoubleIntListSE(this.value);
     this.next = duplicate;
     duplicate.next = oldNext;
     
@@ -29,11 +29,11 @@ public class DoubleIntList {
   }
 
   public static void main(String[] args) {
-    DoubleIntList l = build(args.length);
+    DoubleIntListSE l = build(args.length);
     l.doubleItems();
     int i = args.length;
     while(i > 0) {
-      DoubleIntList l2 = l;
+      DoubleIntListSE l2 = l;
       while(l2.next != null) {
         l2 = l2.next;
       }
