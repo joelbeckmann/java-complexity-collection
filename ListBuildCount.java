@@ -18,7 +18,7 @@ public class ListBuildCount {
 
   public static void main(String[] args) {
     ListBuildCount l = new ListBuildCount(0);
-    appN(args.length);
+    l.next = appN(args.length);
     int i = args.length;
     while(i > 0) {
       ListBuildCount l2 = l;
