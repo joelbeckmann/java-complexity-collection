@@ -2,6 +2,10 @@ public class DoubleIntListSE {
   public DoubleIntListSE next;
   public int value;
   
+  /**
+   * @author David Keller
+   */
+  
   public DoubleIntListSE(int i) {
     this.next = null;
     this.value = i;

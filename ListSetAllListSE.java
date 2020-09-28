@@ -5,6 +5,8 @@ public class ListSetAllListSE {
   /**
    * Create a list 'list' and 'o' of length n
    * Then set the value of each list element to o
+   *
+   * @author Joel Beckmann
    */
 
   public static void main(String[] args) {

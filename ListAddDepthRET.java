@@ -6,6 +6,8 @@ public class ListAddDepthRET {
    * Build a list with length n
    * At each step after the recursive function call, 
    * increase every element in the built list by one
+   *
+   * @author Joel Beckmann
    */
 
   public static void main(String[] args) {

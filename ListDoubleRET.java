@@ -1,6 +1,10 @@
 public class ListDoubleRET {
   public int value;
   public ListDoubleRET next;
+  
+  /**
+   * @author Joel Beckmann
+   */
 
   public static void main(String[] args) {
     int i = args.length;

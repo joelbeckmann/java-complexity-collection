@@ -2,6 +2,10 @@ public class BuildIntListSE {
   public BuildIntListSE next;
   public int value;
   
+  /**
+   * @author David Keller
+   */
+  
   public BuildIntListSE(int i) {
     this.next = null;
     this.value = i;

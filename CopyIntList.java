@@ -2,6 +2,10 @@ public class CopyIntList {
   public CopyIntList next;
   public int value;
   
+  /**
+   * @author David Keller
+   */
+  
   public CopyIntList(int i) {
     this.next = null;
     this.value = i;

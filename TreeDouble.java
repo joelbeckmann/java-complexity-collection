@@ -10,6 +10,8 @@ public class TreeDouble {
    *   /\
    *  /\
    *
+   *
+   * @author Joel Beckmann
    */
 
   public static void main(String[] args) {

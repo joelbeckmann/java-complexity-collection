@@ -1,6 +1,10 @@
 public class ListDoubleSE {
   public int value;
   public ListDoubleSE next;
+  
+  /**
+   * @author David Keller
+   */
 
   public static void main(String[] args) {
     int i = args.length;

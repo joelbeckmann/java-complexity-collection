@@ -4,6 +4,8 @@ public class DeleteLastSE {
   /**
    * Build a list with length n
    * Then delete every element one by one from end to start
+   *
+   * @author Joel Beckmann
    */
 
   public static void main(String[] args) {

@@ -4,6 +4,8 @@ public class BuildTreeSE {
   
   /**
    * Build a full binary tree with height n
+   *
+   * @author Joel Beckmann
    */
 
   public static void main(String[] args) {

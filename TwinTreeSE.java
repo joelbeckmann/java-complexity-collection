@@ -9,6 +9,8 @@ public class TwinTreeSE {
   *  /\ \
   * /\ \ \
   *
+  *
+  * @author Joel Beckmann
   */
 
   public static void main(String[] args) {

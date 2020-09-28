@@ -4,6 +4,8 @@ public class BuildTreeConstSE {
   
   /**
    * Build a full binary tree with constant height
+   *
+   * @author Joel Beckmann
    */
 
   public static void main(String[] args) {

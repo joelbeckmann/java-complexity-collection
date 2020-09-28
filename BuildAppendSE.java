@@ -5,6 +5,8 @@ public class BuildAppendSE {
    * Build list appList with length n
    * Then build list with length n
    * Then append appList to list
+   *
+   * @author Joel Beckmann
    */
 
   public static void main(String[] args) {

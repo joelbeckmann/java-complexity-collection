@@ -1,6 +1,10 @@
 public class BuildList {
   public BuildList next;
   
+  /**
+   * @author David Keller
+   */
+  
   public BuildList() {
     this.next = null;
   }

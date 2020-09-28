@@ -28,7 +28,7 @@ A collection of Java programs for Complexity Analysis.
 | ListBuildCount     | O(n^2)          | O(n)            |
 | ListBuildCount2    | O(n^2)          | O(n)            |
 | ListDouble         | O(n)            | O(n)            |
-| ListSetAllList     | O(n)            | O(n) / O(n^2)   |
+| ListSetAllList     | O(n)            | O(n)            |
 | ListSetAll         | O(n)            | O(n)            |
 | ListSetAllSelf     | O(n)            | O(n)            |
 | MergeSortSE        | O(n*log(n))     | O(n)            |

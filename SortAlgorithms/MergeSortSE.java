@@ -2,6 +2,8 @@ class MergeSortSE {
 
   /**
    * perform merge sort by rearranging the references
+   *
+   * @author Joel Beckmann
    */
 
   public static void main(String args[]) {

@@ -5,6 +5,8 @@ public class ListSetAllSelfSE {
   /**
    * Create a list 'list' of length n
    * Then set the value of each list element to list
+   *
+   * @author Joel Beckmann
    */
 
   public static void main(String[] args) {

@@ -2,6 +2,10 @@ public class ListBuildCountSE {
   public ListBuildCountSE next;
   public int value;
   
+  /**
+   * @author David Keller
+   */
+  
   public ListBuildCountSE(int i) {
     this.next = null;
     this.value = i;

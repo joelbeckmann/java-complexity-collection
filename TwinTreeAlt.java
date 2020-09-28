@@ -9,6 +9,8 @@ public class TwinTreeAlt {
   *  /\ \
   * /\ \ \
   *
+  *
+  * @author Joel Beckmann
   */
 
   public static void main(String[] args) {

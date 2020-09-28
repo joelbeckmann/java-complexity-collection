@@ -4,6 +4,8 @@ public class ListAddLastRET {
   /**
    * Create a list with length n by going through the whole 
    * list and add an element at the end n times.
+   *
+   * @author Joel Beckmann
    */
 
   public static void main(String[] args) {

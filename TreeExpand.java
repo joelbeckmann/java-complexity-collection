@@ -5,6 +5,8 @@ public class TreeExpand {
   /**
    * Build a list of length n - 3
    * At the end build a tree of height 3
+   *
+   * @author Joel Beckmann
    */
 
   public static void main(String[] args) {

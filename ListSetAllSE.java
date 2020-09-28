@@ -5,6 +5,8 @@ public class ListSetAllSE {
   /**
    * Create a list of length n
    * Then set the value of each list element to one Object
+   *
+   * @author Joel Beckmann
    */
 
   public static void main(String[] args) {

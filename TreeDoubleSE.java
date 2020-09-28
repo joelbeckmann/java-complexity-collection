@@ -10,6 +10,8 @@ public class TreeDoubleSE {
    *   /\
    *  /\
    *
+   *
+   * @author Joel Beckmann
    */
 
   public static void main(String[] args) {
